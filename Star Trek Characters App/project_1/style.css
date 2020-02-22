@@ -1,0 +1,65 @@
+body {
+  background-color: navy;
+  background-image: url(stars.jpg);
+}
+h1 {
+  font-family: Federation;
+  font-size: 70px;
+  color: gold;
+}
+input {
+  font-size: 17px;
+}
+dl {
+  color: white;
+  font-size: 25px;
+}
+dt {
+  padding: 10px;
+}
+img {
+  height: 200px;
+}
+
+.carousel-container {
+  width: 50%;
+  display: inline-flex;
+  justify-content: space-around;
+}
+.carousel-images {
+  width: 50%;
+  background: #fa8d8e;
+  padding: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px #f2cd99;
+}
+.carousel-images img {
+  width: 50%;
+  border-radius: 10px;
+  display: none;
+}
+.carousel-images img:first-of-type {
+  display: block;
+}
+.carousel-button {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  background: white;
+  color: navy;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 5px 5px gold;
+}
+.carousel-button:hover {
+  background: navy;
+  box-shadow: 5px 5px gold;
+  color: white;
+}
+
+
+@media(min-width: 600px) {
+
+}
