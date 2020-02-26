@@ -1,7 +1,9 @@
 /* regular css */
 body {
+  height: 700px;
   background-color: navy;
   background-image: url(stars.jpg);
+  margin-left: 25px;
 }
 h1 {
   font-family: Federation;
@@ -10,16 +12,23 @@ h1 {
   animation-name: going-into-warp;
   animation-duration: 4s;
   animation-iteration-count: infinite;
+  text-shadow: 3px 3px 3px white;
 }
 input {
   font-size: 17px;
 }
 dl {
+  font-family: Final Frontier;
   color: white;
   font-size: 25px;
+  width: 300px;
 }
 dt {
-  padding: 10px;
+  padding: 20px;
+  color: #f97768;
+  text-shadow: 1px 1px 3px #ffd161;
+  font-size: 30px;
+
 }
 img {
   height: 200px;
@@ -27,17 +36,20 @@ img {
 
 /* carousel css */
 .the-whole-thing {
-  margin-left: 25%;
   width: 50%;
   height: 350px;
-  display: inline-flex;
+  display: flex;
+  justify-content: flex-end;
   justify-content: space-around;
+  margin: auto;
+  margin-right: 15em;
+  transform: translate(50px, -280px);
 }
 .carousel {
   width: 50%;
-  background: navy;
+  background: #f97768;
   border-radius: 100%;
-  box-shadow: 4px 4px gold;
+  box-shadow: 3px 3px 5px white;
 }
 .carousel img {
   width: 100%;
@@ -51,16 +63,18 @@ img {
   height: 30px;
   align-self: center;
   background: white;
-  color: navy;
+  color: #f97768;
   padding: 10px;
   border-radius: 10px;
   text-align: center;
-  box-shadow: 5px 5px gold;
+  box-shadow: 5px 5px 3px #ffd161;
 }
 .carousel-button:hover {
-  background: navy;
-  box-shadow: 4px 4px gold;
+  background: #f97768;
+  box-shadow: 4px 4px 4px #ffd161;
   color: white;
+  transform: scale(1.3);
+  transition: .4s;
 }
 
 /* animation */
@@ -77,23 +91,41 @@ img {
   90% {color:crimson}
   100% {color:aqua}
 }
-@keyframes warpspeed {
-  0% {left:100%}
-  10% {left:90%}
-  20% {left:80%}
-  30% {left:70%}
-  40% {left:60%}
-  50% {left:50%}
-  60% {left:40%}
-  70% {left:30%}
-  80% {left:20%}
-  90% {left:10%}
-  100% {left:0%}
-}
 
 /* media css */
 @media(max-width: 600px) {
-  body {
-    height: 500px;
+  h1 {
+    font-size: 60px;
+    text-align: center;
+  }
+  form {
+    display: flex;
+    justify-content: center;
+  }
+  input {
+    font-size: 15px;
+  }
+  dl {
+    display: block;
+    justify-content: center;
+  }
+  dt {
+    display: block;
+    justify-content: center;
+    font-size: 25px;
+  }
+  dd {
+    display: block;
+    justify-content: center;
+    font-size: 25px;
+  }
+  .the-whole-thing {
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+    transform: translate(0, 10px);
+  }
+  .submit {
+  background-color: white;
   }
 }

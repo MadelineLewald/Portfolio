@@ -19,6 +19,7 @@ $(() => {
           $('#uid').text(data.characters[i].uid);
           $('#yearOfDeath').text(data.characters[i].yearOfDeath);
           $('#maritalStatus').text(data.characters[i].maritalStatus);
+
         }
 
       }
