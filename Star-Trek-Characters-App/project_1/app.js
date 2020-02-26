@@ -7,7 +7,7 @@ $(() => {
     const userInput = $('input[type="text"]').val();
     //lets you put stuff in the form
   $.ajax ({
-    url: 'http://stapi.co/api/v1/rest/character/search',
+    url: 'https://stapi.co/api/v1/rest/character/search',
   }).then (
 //the url that characters are grabbed from
     (data) => {
